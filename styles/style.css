@@ -15,24 +15,18 @@
 /* Variables */
 
 :root {
-    --Very-dark-blue
-    /*(main background)*/
-    : hsl(233, 47%, 7%);
-    --Dark-desaturated-blue
-    /*(card background)*/
-    : hsl(244, 38%, 16%);
-    --Soft-violet
-    /*(accent)*/
-    : hsl(277, 64%, 61%);
-    --White
-    /*(main heading, stats)*/
-    : hsl(0, 0%, 100%);
-    --Slightly-transparent-white-main-para
-    /*(main paragraph)*/
-    : hsla(0, 0%, 100%, 0.75);
-    --Slightly-transparent-white-stats-heading
-    /*(stat headings)*/
-    : hsla(0, 0%, 100%, 0.6);
+    --Very-dark-blue: hsl(233, 47%, 7%);/*(main background)*/
+    
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);/*(card background)*/
+
+    --Soft-violet: hsl(277, 64%, 61%);/*(accent)*/
+
+    --White: hsl(0, 0%, 100%);/*(main heading, stats)*/
+    
+    --Slightly-transparent-white-main-para: hsla(0, 0%, 100%, 0.75);/*(main paragraph)*/
+    
+    --Slightly-transparent-white-stats-heading: hsla(0, 0%, 100%, 0.6);/*(stat headings)*/
+    
 }
 
 /* Using flex to center the content */
@@ -124,9 +118,15 @@ border-top-right-radius: 16px; border-bottom-right-radius: 16px;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px; border-bottom-right-radius: 16px;
+    opacity: 0.4;
 }
+
+.image-section{
+    background-color: var(--Soft-violet);
+    border-top-right-radius: 16px; border-bottom-right-radius: 16px;
+}
+
 
 /* MEDIA QUERY */
 
@@ -192,4 +192,10 @@ border-top-right-radius: 16px; border-bottom-right-radius: 16px;
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
     }
+    
+    .image-section{
+        background-color: var(--Soft-violet);
+        border-radius: 10px 10px 0px 0px;
+    }
+    
 }
